@@ -1,4 +1,6 @@
-export const App = () => {
+import { Profile } from "./Profile/Profile";
+import { user } from "./data/user.json";
+export const App = () => { 
   return (
     <div
       style={{
@@ -10,7 +12,7 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      React homework template
+      <Profile user = { user }/>
     </div>
   );
 };
