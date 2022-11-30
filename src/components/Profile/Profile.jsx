@@ -1,11 +1,10 @@
 // import css from './.....module.css';
 import css from "../Profile/Profile.module.css";
-export const Profile = ( {user} ) => {
-  console.log(user)
+export const Profile = ( {username, tag, location, avatar, followers, views, likes} ) => {
     return <div className={css.form__wrap}>
     <div class="description">
       <img
-        src="{avatar}"
+        src={avatar}
         alt="User avatar"
         class="avatar"
       />
@@ -29,12 +28,12 @@ export const Profile = ( {user} ) => {
   </div>
 }
 
-// Profile.protoTypes ={
-//   username: ProtoTypes.string.isRequired,
-//   avatar: ProtoTypes.string.isRequired, 
-//   tag: ProtoTypes.string.isRequired,
-//   location: ProtoTypes.string.isRequired,
-//   stats: ProtoTypes.number.isRequired,
-//   stats.views: ProtoTypes.number.isRequired,
-//   stats.likes: ProtoTypes.number.isRequired,
-// }
+Profile.propTypes = {
+  username: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired, 
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  followers: PropTypes.number.isRequired,
+  views: PropTypes.number.isRequired,
+  likes: PropTypes.number.isRequired,
+};
