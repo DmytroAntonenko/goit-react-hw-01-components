@@ -1,6 +1,6 @@
-import css  from "./Profile/Profile.module";
+import css from './.....module.css';
 export const Profile = ( {username, avatar, tag, location, followers, views, likes} ) => {
-    return <div class="profile">
+    return <div className={css.form__wrap}>
     <div class="description">
       <img
         src="{avatar}"
