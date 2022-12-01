@@ -10,7 +10,8 @@
 .avatar {
     padding-top: 40px;
     max-width: 280px;
-    border-radius: 80%;
+    max-height: 160px;
+    border-radius: 50%;
 }
 
 .name {
@@ -44,24 +45,25 @@
     justify-content: space-between;  
 }
 
-
+.item:not(:last-child) {
+    border-right: solid 1px black;
+}
 
 .label {
-    padding: 24px 0;
+    padding: 16px 0;
     color: gray;
     width: 92px;
     font-weight: 500;
     font-size: 18px;
     display: flex;
-    border-right: solid 1px black;
     justify-content: center;
 }
 
 .quantity {
     font-weight: 600;
+    padding-bottom: 8px;
     font-size: 24px;
     width: 92px;
     display: flex;
     justify-content: center;
-    border-right: solid 1px black;
 }

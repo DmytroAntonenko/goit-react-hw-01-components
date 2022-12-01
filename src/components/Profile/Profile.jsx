@@ -1,6 +1,7 @@
-// import css from './.....module.css';
 import css from "../Profile/Profile.module.css";
+import PropTypes from 'prop-types';
 export const Profile = ( {username, tag, location, avatar, followers, views, likes} ) => {
+  // console.log(username, tag, location, avatar, followers, views, likes)
     return <div className={css.form__wrap}>
     <div className={css.description}>
       <img
@@ -14,15 +15,15 @@ export const Profile = ( {username, tag, location, avatar, followers, views, lik
     </div>
   
     <ul className={css.stats}>
-      <li>
+      <li className={css.item}>
         <span className={css.label}>Followers</span>
         <span className={css.quantity}>{followers}</span>
       </li>
-      <li>
+      <li className={css.item}>
         <span className={css.label}>Views</span>
         <span className={css.quantity}>{views}</span>
       </li>
-      <li>
+      <li className={css.item}>
         <span className={css.label}>Likes</span>
         <span className={css.quantity}>{likes}</span>
       </li>
@@ -30,12 +31,12 @@ export const Profile = ( {username, tag, location, avatar, followers, views, lik
   </div>
 }
 
-// Profile.propTypes = {
-//   username: PropTypes.string.isRequired,
-//   avatar: PropTypes.string.isRequired, 
-//   tag: PropTypes.string.isRequired,
-//   location: PropTypes.string.isRequired,
-//   followers: PropTypes.number.isRequired,
-//   views: PropTypes.number.isRequired,
-//   likes: PropTypes.number.isRequired,
-// };
+Profile.propTypes = {
+  username: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired, 
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  followers: PropTypes.number.isRequired,
+  views: PropTypes.number.isRequired,
+  likes: PropTypes.number.isRequired,
+};
