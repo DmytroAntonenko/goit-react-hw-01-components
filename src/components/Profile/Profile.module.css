@@ -1,5 +1,6 @@
 .description {
     max-width: 320px;
+    margin-top: 40px;
     margin-right: auto;
     margin-left: auto;
     background-color: #e6e9dd;
@@ -15,8 +16,8 @@
 }
 
 .name {
-    font-weight: 600;
-    font-size: 32px;
+  font-weight: 600;
+  font-size: 32px;
   color: blue;
   align-items: center;   
 }
@@ -34,12 +35,16 @@
 }
 
 .stats{
+    
+    max-width: 320px;
+    margin-right: auto;
+    margin-left: auto;
     list-style-type: none;
     background-color: #b7d365;
-    margin: 0;
+    margin-top: 0;
     padding: 0;
     
-    border: solid 2px black;
+    border: solid 1px black;
     border-radius: 0 0 5px 5px;
     display: flex;
     justify-content: space-between;  
@@ -52,7 +57,7 @@
 .label {
     padding: 16px 0;
     color: gray;
-    width: 92px;
+    width: 107px;
     font-weight: 500;
     font-size: 18px;
     display: flex;
@@ -63,7 +68,7 @@
     font-weight: 600;
     padding-bottom: 8px;
     font-size: 24px;
-    width: 92px;
+    width: 107px;
     display: flex;
     justify-content: center;
 }

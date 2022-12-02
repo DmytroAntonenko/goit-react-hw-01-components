@@ -1,23 +1,27 @@
 .section {
-    max-width: 440px;
-    margin-left: 40px;
+    max-width: 320px;
+    /* margin-bottom: 40px; */
+    margin-left: auto;
+    margin-right: auto;
     border: solid 1px black;
     border-radius: 4px;
+    
 }
 
 .title {
     font-weight: 700;
     font-size: 48px;
-    /* color: blue; */
-    text-align: center;
     background-color: #e6e9dd;
-
+    text-align: center;
     margin: 0;
     padding: 60px 0;
+    
 }
 
 .statList {
     display: flex;
+
+    /* flex-wrap: nowrap; */
     list-style-type: none;
     background-color: #b7d365;
     margin: 0;
@@ -30,20 +34,21 @@
 
 
 .label {
-    padding: 16px 0;
+    display: flex;
     color: gray;
-    width: 72px;
+    /* flex-basis: calc((100% - 10px)/ 5); */
+    width: 63px;
     font-weight: 500;
     font-size: 18px;
-    display: flex;
+    padding: 16px 0;
     justify-content: center;
 }
 
 .percentage {
-    font-weight: 600;
-    padding-bottom: 8px;
-    font-size: 24px;
-    width: 72px;
     display: flex;
+    font-weight: 600;
+    padding: 5px;
+    font-size: 24px;
+    /* flex-basis: calc(100%/ 5); */
     justify-content: center;
 }
