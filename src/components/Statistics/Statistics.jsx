@@ -4,7 +4,7 @@ export const Statistics = ( {title, stats} ) => {
     // console.log(username, tag, location, avatar, followers, views, likes)
       return <section className={css.section}>
         {title && <h2 className={css.title}>{title}</h2>}
-        {/* <h2 class="title">{title}</h2> */}
+        
 
         <ul className={css.statList}>
             {stats.map(item => (
