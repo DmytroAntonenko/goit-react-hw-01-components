@@ -10,7 +10,7 @@ export const FriendList = ({items}) => {
         key={item.id}
         name={item.name}
         avatar={item.avatar}
-        isonline={item.isonline}
+        isOnline={item.isOnline}
         />
     )}
 </ul>

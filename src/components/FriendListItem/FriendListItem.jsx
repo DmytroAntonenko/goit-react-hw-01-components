@@ -1,11 +1,11 @@
 import css from "../FriendListItem/FriendListItem.module.css";
 import PropTypes from 'prop-types';
 
-export const FriendListItem = ( {name, avatar, isonline, variant} ) => {
+export const FriendListItem = ( {name, avatar, isOnline} ) => {
   console.log(css)
     return <div className={css.form__wrap}>
         <li className={css.item}>
-            <span className={`${css.status} ${css.true} || ${css.false}`}>{isonline}</span>
+        <span className={`${css.status} ${isOnline? css.true : css.false}`}>{isOnline}</span>
             <img className={css.avatar} src={avatar} alt="User avatar" width="80" height="80" />
             <p className={css.name}>{name}</p>
         </li>
@@ -15,5 +15,5 @@ export const FriendListItem = ( {name, avatar, isonline, variant} ) => {
 FriendListItem.propTypes = {
     name: PropTypes.string.isRequired,
     avatar: PropTypes.string.isRequired,
-    isonline: PropTypes.bool,
+    isOnline: PropTypes.bool,
 }
