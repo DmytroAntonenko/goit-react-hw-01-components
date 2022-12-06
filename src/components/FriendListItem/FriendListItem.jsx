@@ -2,7 +2,7 @@ import css from "../FriendListItem/FriendListItem.module.css";
 import PropTypes from 'prop-types';
 
 export const FriendListItem = ( {name, avatar, isOnline} ) => {
-  console.log(css)
+//   console.log(css)
     return <div className={css.form__wrap}>
         <li className={css.item}>
         <span className={`${css.status} ${isOnline? css.true : css.false}`}>{isOnline}</span>
